@@ -1,0 +1,77 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2d43be13-56eb-43ff-9f2d-d66f9df0f81f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>my_game.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>my_game</Name>
+    <RootNamespace>my_game</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="my_game.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="animals.gif" />
+    <Content Include="back.png.jpg" />
+    <Content Include="bitcoin.png" />
+    <Content Include="bunny1.gif" />
+    <Content Include="bunny1.png" />
+    <Content Include="bunny2.png" />
+    <Content Include="bunny3.png" />
+    <Content Include="bunny4.png" />
+    <Content Include="button.png" />
+    <Content Include="cat1.gif" />
+    <Content Include="cat1.png" />
+    <Content Include="cat2.png" />
+    <Content Include="cat3.png" />
+    <Content Include="cat4.png" />
+    <Content Include="coin.png" />
+    <Content Include="Daydream.ttf" />
+    <Content Include="goat1.gif" />
+    <Content Include="goat1.png" />
+    <Content Include="goat2.png" />
+    <Content Include="goat3.png" />
+    <Content Include="goat4.png" />
+    <Content Include="hole.png" />
+    <Content Include="hole_upsidedown.png" />
+    <Content Include="orangecat1.gif" />
+    <Content Include="orangepig1.gif" />
+    <Content Include="pig1.gif" />
+    <Content Include="platform.png" />
+    <Content Include="play.png" />
+    <Content Include="purplegoat1.gif" />
+    <Content Include="purplegoat1.png" />
+    <Content Include="purplegoat2.png" />
+    <Content Include="purplegoat3.png" />
+    <Content Include="purplegoat4.png" />
+    <Content Include="redbunny1.gif" />
+    <Content Include="redbunny1.png" />
+    <Content Include="redbunny2.png" />
+    <Content Include="redbunny3.png" />
+    <Content Include="redbunny4.png" />
+    <Content Include="song.mp3" />
+    <Content Include="spike_upsidedown.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
